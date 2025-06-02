@@ -1,29 +1,26 @@
-# translatorapi
+# TranslatorAPI – English to Hindi Translator SPA (Vue.js + Google Translate API)
 
-This template should help get you started developing with Vue 3 in Vite.
+A single-page Vue.js application that translates English text into Hindi using the Google Translate API. It maintains a history of the last 10 translations, supports light/dark mode, includes error handling, text-to-speech functionality, and offers a sleek, modern UI.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Directory Structure
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+translatorapi/
+├── public/ # Static assets
+├── src/
+│ ├── assets/ # Project images, icons, logos
+│ ├── components/ # Reusable Vue components
+│ │ ├── Translator.vue # Main translation interface
+│ │ ├── History.vue # Component for showing translation history
+│ │ └── ThemeToggle.vue # Light/Dark mode toggle button
+│ ├── views/
+│ │ └── HomeView.vue # Main view, includes all components
+│ ├── App.vue # Root component
+│ ├── main.js # Application entry point
+│ └── utils/
+│ └── api.js # Axios wrapper for Google Translate API
+├── .gitignore
+├── index.html # HTML entry point for Vite
+├── vite.config.js # Vite configuration
+└── package.json # Project dependencies and scripts
